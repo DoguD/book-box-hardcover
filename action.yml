@@ -1,9 +1,9 @@
-name: book-box
+name: book-box-hardcover
 author: Anthony Morris <anthony@amorrissound.com>
 description: Update a pinned gist to contain your latest reads on Goodreads
 runs:
   using: 'docker'
   image: 'Dockerfile'
 branding:
-  icon: 'book'
-  color: 'purple'
+  icon: 'book-open'
+  color: 'green'
