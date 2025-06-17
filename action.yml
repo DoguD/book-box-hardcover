@@ -1,6 +1,6 @@
 name: book-box-hardcover
 author: Anthony Morris <anthony@amorrissound.com>
-description: Update a pinned gist to contain your latest reads on Goodreads
+description: Update a pinned gist to contain your latest reads on Hardcover.app
 runs:
   using: 'docker'
   image: 'Dockerfile'
