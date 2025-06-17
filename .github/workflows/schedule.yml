@@ -3,17 +3,17 @@ on:
     branches:
       - master
   schedule:
-    - cron: '0 * * * *'
-name: Update gist with latest goodreads
+    - cron: '0 0 * * 0'  # Run every Sunday at midnight UTC
+  workflow_dispatch:  # Allow manual trigger
+name: Update gist with latest hardcover.app 
 jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: update-gist
-        uses: amorriscode/book-box@master
+        uses: DoguD/book-box-hardcover@master
         env:
           GIST_ID: ${{ secrets.GIST_ID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
-          GOODREADS_USER_ID: ${{ secrets.GOODREADS_USER_ID }}
+          HARDCOVER_KEY: ${{ secrets.HARDCOVER_KEY }}
