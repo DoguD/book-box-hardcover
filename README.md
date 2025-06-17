@@ -1,10 +1,12 @@
-Forked from https://github.com/amorriscode/book-box
+Forked from Forked from https://github.com/ashtom/book-box that was forked from https://github.com/amorriscode/book-box.
+
+Migrated to use Hardcover API instead of GoodReads as they don't offer API access anymore.
 
 ---
 
 <p align="left">
-  <h3 align="left">book-box</h3>
-  <p align="left">📚Update a pinned gist to contain your latest reads on Goodreads</p>
+  <h3 align="left">book-box-hardcover</h3>
+  <p align="left">📚Update a pinned gist to contain your latest reads on Hardcover.app</p>
 </p>
 
 ---
@@ -17,8 +19,9 @@ Forked from https://github.com/amorriscode/book-box
 
 1. [Create a new public GitHub Gist](https://gist.github.com/)
 2. [Create a token with the `gist` scope and copy it.](https://github.com/settings/tokens/new)
-3. [Create a Goodreads account](https://www.goodreads.com/user/sign_up)
-4. [Create an API for the Goodreads API](https://www.goodreads.com/api/keys)
+![GitHub Token Gist Permission](readme_images/gh_token_gist_permission.png)
+3. [Create a Hardcover account](http://hardcover.app/)
+4. [Get your API key for the Hardcover API](https://hardcover.app/account/api)
 
 ### Project setup
 
@@ -27,8 +30,7 @@ Forked from https://github.com/amorriscode/book-box
 3. Add the following environment variables:
   - **GIST_ID:** The ID of the gist you created above (`https://gist.github.com/amorriscode/`**`3f84910b524db4819ec2dc1063f632ab`**).
   - **GH_TOKEN:** The GitHub token generated above.
-  - **GOODREADS_KEY:** The API key for your Goodreads account.
-  - **GOODREADS_USER_ID:** The user ID for your Goodreads account (`https://www.goodreads.com/user/show/`**`5171404`**`-anthony`).
+  - **HARDCOVER_KEY:** The API key for the Hardcover API. (Don't copy the `Bearer ` prefix.)
 
 ## Inspiration
 
@@ -36,4 +38,4 @@ This gist was inspired by [matchai's](https://github.com/matchai) [bird-box](htt
 
 ## Timestamps
 
-* 2021-04-13
+* 2025-06-17
