@@ -1,10 +1,13 @@
 {
-  "name": "book-box",
+  "name": "book-box-hardcover",
   "version": "1.0.0",
-  "description": "📚Update a pinned gist to contain your latest reads on Goodreads",
+  "description": "📚Update a pinned gist to contain your latest reads on Hardcover.app",
   "main": "index.js",
-  "repository": "https://github.com/amorriscode/book-box",
+  "repository": "https://github.com/DoguD/book-box-hardcover",
   "author": "Anthony Morris <anthony@amorrissound.com>",
+  "contributors": [
+    "Dogu Deniz Ugur <dogudeniz.ugur@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "@octokit/rest": "^17.9.2",
