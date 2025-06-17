@@ -13,6 +13,6 @@
     "@octokit/rest": "^17.9.2",
     "dotenv": "^8.2.0",
     "got": "^11.1.4",
-    "lodash.get": "^4.4.2"
+    "wordwrap": "^1.0.0"
   }
 }

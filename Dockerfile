@@ -8,12 +8,12 @@ LABEL "com.github.actions.description"="Update a pinned gist to contain your lat
 LABEL "com.github.actions.icon"="book-open"
 LABEL "com.github.actions.color"="green"
 
-# Copy the package.json and package-lock.json
-COPY yarn.lock ./
+# Copy the package.json
 COPY package.json ./
+COPY package-lock.json ./
 
 # Install dependencies
-RUN yarn install --frozen-lockfile
+RUN npm install --production
 
 # Copy the rest of your action's code
 COPY . .
